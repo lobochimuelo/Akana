@@ -7,12 +7,13 @@ import { PageThreeComponent } from './components/page-three/page-three.component
 import { PageFourComponent } from './components/page-four/page-four.component';
 
 const routes: Routes = [
-  // { path: '', component: AppComponent },
+
+  // { path: 'inicio', component: AppComponent },
   { path: 'one', component: PageOneComponent },
   { path: 'two', component: PageTwoComponent },
   { path: 'three', component: PageThreeComponent },
   { path: 'four', component: PageFourComponent },
-  // { path: '**', component: AppComponent },
+  { path: '**', component: PageOneComponent }
 ];
 
 @NgModule({
