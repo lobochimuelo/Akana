@@ -1,19 +1,29 @@
-<nav>
-<ul class="nav justify-content-center">
-  <li class="nav-item">
-    <a class="nav-link active" routerLink="/one">INICIO</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link active" routerLink="/two">¿DONDE COMER?</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link active" routerLink="/three">TU LOCAL</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link active" routerLink="/four">NOSOTROS</a>
-  </li>
-</ul>
-</nav>
+<body>
 
+  
+
+    <nav class="navbar navbar-light bg-light" id="ini">
+      
+        <a class="navbar-brand" >
+          <img src="assets/img/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
+          AKANA
+        </a>
+        <ul class="nav nav-pills" routerLinkActive="active">
+            <li class="nav-item">
+              <a class="nav-link  " routerLink="/one">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " routerLink="/two">¿DONDE COMER?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " routerLink="/three">TU LOCAL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " routerLink="/four">NOSOTROS</a>
+            </li>
+          </ul>
+      </nav>
+
+</body>
 <router-outlet></router-outlet>
 
