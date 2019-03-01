@@ -2,26 +2,31 @@
 
   
 
-    <nav class="navbar navbar-light bg-light" id="ini">
+    <nav class="navbar  navbar-expand-md   bg-light" id="ini">
       
         <a class="navbar-brand" >
           <img src="assets/img/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
           AKANA
         </a>
-        <ul class="nav nav-pills" routerLinkActive="active">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarTogglerDemo02" >
+              <ul class="navbar-nav ml-auto mt-2 mt-lg-0 text-center">
             <li class="nav-item">
-              <a class="nav-link  " routerLink="/one">INICIO</a>
+              <a class="nav-link" routerLink="/one">INICIO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " routerLink="/two">¿DONDE COMER?</a>
+              <a class="nav-link" routerLink="/two">¿DONDE COMER?</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " routerLink="/three">TU LOCAL</a>
+              <a class="nav-link" routerLink="/three">TU LOCAL</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " routerLink="/four">NOSOTROS</a>
+              <a class="nav-link" routerLink="/four">NOSOTROS</a>
             </li>
           </ul>
+        </div>
       </nav>
 
 </body>
