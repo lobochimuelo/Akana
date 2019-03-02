@@ -1,12 +1,13 @@
 .container {
     background-color: #a7d129;
-    min-height: 80vh;
+    max-width: 550px;
     border-radius: 4%;
     padding-top: 5%;
+    padding-bottom: 5%;
 }
     
 .container-fluid{
-    background-color: #616f39;
+    background-color: #282926;
     min-height: 100vh;
     padding-top: 5%;
 
