@@ -20,11 +20,14 @@
     margin-right: auto;
 }
 .btn{
+    margin-top: 5%;
+margin-left: auto;
 margin-right:auto;
-width: 20%;
+width: 90%;
 }
 .form-control{
-    width: 70%;
+    width: 100%;
+    height: 40px;
     border-block-end-color: 238px;
     border-color: rgb(0, 145, 24);
 }
@@ -33,8 +36,12 @@ width: 20%;
   
 }
 .opciones{
-    padding-left: 5%;
+    margin-left: auto;
+    margin-right: auto;
 width: 100%;
 
-    
+}
+input {
+    text-align: center;
+    font-size: 1.6rem;
 }
