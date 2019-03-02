@@ -1,11 +1,62 @@
+.imagen{
+  display: block;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+
+  border-radius: 3%;
+}
 img {
     display: block;
     margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+
     border-radius: 3%;
   }
-  body {
-      background-color: #616f39;
+  .container{
+    background-color: #a7d129;
+    margin-top: 11%;
+    margin-left: auto;
+    height: 90%;
+    width: 90%;
+    padding-top: 0%;
+    border-radius: 4%;
+
+
   }
+  .container-fluid {
+    background-color: #616f39;
+    height: 100%;
+    
+  
+  }
+
+  .row {
+   
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+
+ .btn-secondary {
+  color: #fff;
+  background-color: #616f39;
+  border-color: #f5db49;
+  margin-top: 2%;
+  width: 65%;
+  
+}
+.b2{
+  margin-bottom: 9%;
+
+}
+.trans{
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+
