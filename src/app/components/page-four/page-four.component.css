@@ -20,7 +20,8 @@
 }
     
     .container{
-      background-color: #a7d129;
+        background-color: #4e4e4e;
+        border: #a7d129 3px solid;
       margin-top: 11%;
       margin-left: auto;
       height: 90%;
@@ -35,7 +36,7 @@
   
     }
     .container-fluid {
-      background-color: #282926;
+      background-color: #302f2f;
       min-height: 100vh;
   
     }

@@ -1,13 +1,21 @@
-.imagen{
-  display: block;
-  margin-top: 1%;
+.imagen1{
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  width: 50%;
+  border: #f1f1f1 3px solid;
+  border-radius: 60%;
+  margin-bottom: 4%;}
 
-  border-radius: 3%;
+.imagen{
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;}
+.img-comida{
+  border: #a7d129 3px solid;
+
 }
 img {
+
     display: block;
     margin-top: 5%;
     margin-left: auto;
@@ -17,22 +25,38 @@ img {
     border-radius: 3%;
   }
   .container{
-    background-color: #a7d129;
+    background-color: #4e4e4e;
+    border: #a7d129 3px solid;
+
     margin-top: 11%;
     margin-left: auto;
     height: 90%;
     width: 90%;
-    padding-top: 0%;
+    padding-top: 1%;
     border-radius: 4%;
 
+  }
+
+  .container2{
+
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80%;
+    width: 75%;
+    padding-top: 0%;
+   background-color: #4e4e4e;
+   border-radius: 2%;
+   border: #a7d129 3px solid;
 
   }
   .container-fluid {
-    background-color: #282926;
-    min-height: 100vh;
+    background-color: #302f2f;
+    min-height: 100%;
+    padding-bottom: 4%;
 
   }
-
+ 
   .row {
    
     margin-right: auto;
@@ -55,3 +79,14 @@ img {
 }
 
 
+.div-button{
+  margin-top: 0%;
+}
+.imagen2{
+  padding-top: 5%;
+  width: 30%;
+}
+.btn-success{
+  background-color: #a7d129;
+  color: rgb(82, 82, 82);
+}
