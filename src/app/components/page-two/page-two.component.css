@@ -1,0 +1,40 @@
+.container {
+    background-color: #a7d129;
+    min-height: 80vh;
+    border-radius: 4%;
+    padding-top: 5%;
+}
+    
+.container-fluid{
+    background-color: #616f39;
+    min-height: 100vh;
+    padding-top: 5%;
+
+}
+
+.bus{
+    align-content:center;
+    width:100%;
+    max-width:540px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn{
+margin-right:auto;
+width: 20%;
+}
+.form-control{
+    width: 70%;
+    border-block-end-color: 238px;
+    border-color: rgb(0, 145, 24);
+}
+.btn-secondary{
+    margin-top: 7%;
+  
+}
+.opciones{
+    padding-left: 5%;
+width: 100%;
+
+    
+}
