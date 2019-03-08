@@ -7,6 +7,7 @@ import { PageTwoComponent } from './components/page-two/page-two.component';
 import { PageThreeComponent } from './components/page-three/page-three.component';
 import { PageFourComponent } from './components/page-four/page-four.component';
 import { AppRoutingModule } from './app-routing.module';
+import { RegistroComponent } from './components/registro/registro.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AppRoutingModule } from './app-routing.module';
     PageOneComponent,
     PageTwoComponent,
     PageThreeComponent,
-    PageFourComponent
+    PageFourComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,
