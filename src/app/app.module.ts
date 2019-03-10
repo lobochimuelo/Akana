@@ -8,6 +8,12 @@ import { PageThreeComponent } from './components/page-three/page-three.component
 import { PageFourComponent } from './components/page-four/page-four.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RegistroComponent } from './components/registro/registro.component';
+import {environment} from '../environments/environment';
+
+
+import {AngularFireModule} from '@angular/fire';
+import {AngularFireDatabaseModule} from '@angular/fire/database';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +26,9 @@ import { RegistroComponent } from './components/registro/registro.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
