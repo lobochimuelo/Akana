@@ -9,10 +9,12 @@ import { PageFourComponent } from './components/page-four/page-four.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RegistroComponent } from './components/registro/registro.component';
 import {environment} from '../environments/environment';
+import { FormsModule } from '@angular/forms';
 
 
 import {AngularFireModule} from '@angular/fire';
 import {AngularFireDatabaseModule} from '@angular/fire/database';
+import {AngularFireAuth} from '@angular/fire/auth';
 
 
 @NgModule({
@@ -27,10 +29,12 @@ import {AngularFireDatabaseModule} from '@angular/fire/database';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule
   ],
-  providers: [],
+  providers: [AngularFireAuth],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

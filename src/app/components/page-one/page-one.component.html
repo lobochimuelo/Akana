@@ -1,3 +1,4 @@
+
 <BODY>
 <div class="container-fluid">
   
@@ -8,26 +9,27 @@
       <div class="container">
           <img class="imagen1" src="assets/img/login.png" >
 
-        <form>
-        <div class="form-group ">
+              <form #formLogin="ngForm" (submit)="onLogin()">
+
+          <div class="form-group ">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  ">
 
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo">
+          <input [(ngModel)]="email" name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo" required>
         </div>
         </div>
 
         <div class="form-group ">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña">
+                <input [(ngModel)]="password"  name="password" type="password" class="form-control" id="inputPassword" placeholder="Contraseña" required>
           </div>
 
         </div>
-
+        <div class="trans row">
+            <button type="submit" class="btn btn-success b1 col-sm-10 col-lg-8">INICIAR SESION</button>
+           
+      </div>
       </form>
-      <div class="trans row">
-          <button type="button" class="btn btn-success b1 col-sm-10 col-lg-8">INICIAR SESION</button>
-         
-    </div>
+     
     <div class="trans row">
         <button type="button" class="btn btn-success b2 col-sm-10 col-lg-8 b2" routerLink="/registro">REGISTRARSE</button>
       </div>

@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireAuth } from '@angular/fire/auth';
+import { auth } from 'firebase/app';
+import { Router } from '@angular/router';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-page-one',
@@ -7,9 +11,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageOneComponent implements OnInit {
 
-  constructor() { }
+  constructor(public afAuth: AngularFireAuth, private router: Router, private authService: AuthService) { }
 
+  public email: string = '';
+  public password: string = '';
   ngOnInit() {
-  }
 
+   
+  }
+  onLogin(): void {
+   
+    this.authService.loginEmailUser(this.email, this.password)
+      .then((res) => {
+        this.router.navigate(['/two']);
+      }).catch(err => console.log('err', err.message));
+  }
+  
+   onLogout(){
+      this.authService.logoutUser();
+ }
 }
