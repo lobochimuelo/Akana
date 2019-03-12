@@ -15,6 +15,8 @@ export class PageOneComponent implements OnInit {
 
   public email: string = '';
   public password: string = '';
+  public isLogged: boolean = false;
+
   ngOnInit() {
 
    
@@ -24,7 +26,7 @@ export class PageOneComponent implements OnInit {
     this.authService.loginEmailUser(this.email, this.password)
       .then((res) => {
         this.router.navigate(['/two']);
-      }).catch(err => console.log('err', err.message));
+      }).catch(err =>this.isLogged = true );
   }
   
    onLogout(){
