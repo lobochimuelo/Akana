@@ -8,7 +8,7 @@
           <form (ngSubmit)="onSaveLocal(formNew)" #formNew="ngForm">
               <div class="form-group">
                 <label for="exampleFormControlInput1"><h6>Nombre Local</h6></label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="local.nombre" #nombre="ngModel" name="nombre" >
+                <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="local.nombre" #nombre="ngModel" name="nombre" [(ngModel)]="local.id"  >
               </div>
               <div class="form-group">
                   <label for="exampleFormControlInput1"> <h6>Direccion</h6></label>
