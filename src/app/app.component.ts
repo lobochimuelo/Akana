@@ -1,6 +1,7 @@
 import { AuthService } from './services/auth.service';
 import { Component } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-root',
@@ -19,16 +20,12 @@ export class AppComponent {
   getCurrentUser() {
     this.authService.isAuth().subscribe(auth => {
       if (auth) {
-        console.log('user logged');
         this.isLogged = true;
       } else {
-        console.log('NOT user logged');
         this.isLogged = false;
       }
     });
   }
 
-  onLogout() {
-    this.afsAuth.auth.signOut();
-  }
+ 
 }

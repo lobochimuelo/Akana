@@ -43,8 +43,37 @@
         <button type="button" class="btn btn-success">BUSCAR</button>
 
   </form>
+
+
+
+
+ 
   
 </div>
 
+
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-4" *ngFor="let local of locales">
+<div class="card" style="width: 18rem;">
+  <img src="assets/img/descarga.jpg" height=150>
+  <div class="card-body">
+    <h5 class="card-title">{{local.nombre}}</h5>
+    <p class="card-text">{{local.tipo}}, {{local.direccion}}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <h6> MENU DEL DIA</h6></li>
+    <li class="list-group-item">Entrada: {{local.entrada}}</li>
+    <li class="list-group-item">Sopa: {{local.sopa}}</li>
+    <li class="list-group-item">Segundo: {{local.segundo}}</li>
+    <li class="list-group-item">Postre: {{local.postre}}</li>
+
+  </ul>
+  <div class="card-body">
+    <a class="card-link" >PRECIO</a>
+    <a class="card-link">{{local.precio}} Bs</a>
+  </div>
+</div>
+</div>
 
 </div>

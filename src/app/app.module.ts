@@ -17,7 +17,7 @@ import {AngularFireDatabaseModule} from '@angular/fire/database';
 import {AngularFireAuth} from '@angular/fire/auth';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFirestore } from '@angular/fire/firestore';
-
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +26,8 @@ import { AngularFirestore } from '@angular/fire/firestore';
     PageTwoComponent,
     PageThreeComponent,
     PageFourComponent,
-    RegistroComponent
+    RegistroComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

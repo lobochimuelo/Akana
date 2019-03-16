@@ -1,47 +1,68 @@
 
 <BODY>
-<div class="container-fluid">
-  
-  <div class="row">
-   
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-     
-      <div class="container">
-          <img class="imagen1" src="assets/img/login.png" >
-
-              <form #formLogin="ngForm" (submit)="onLogin()">
-
-          <div class="form-group ">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  ">
-
-          <input [(ngModel)]="email" name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo" required>
-        </div>
-        </div>
-
-        <div class="form-group ">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <input [(ngModel)]="password"  name="password" type="password" class="form-control" id="inputPassword" placeholder="Contraseña" required>
-          </div>
-          <p align="center" *ngIf="isLogged"> <font size="4" color="#a7d129">Correo o Contraseña incorrecto</font></p>
-
-        </div>
-        <div class="trans row">
-            <button type="submit" class="btn btn-success b1 col-sm-10 col-lg-8">INICIAR SESION</button>
+    <div class="container-fluid">
+        <div class="row">
+         
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4" >
            
-      </div>
-      </form>
-     
-    <div class="trans row">
-        <button type="button" class="btn btn-success b2 col-sm-10 col-lg-8 b2" routerLink="/registro">REGISTRARSE</button>
-      </div>
-    </div>
+            <div class="container" >
+                <img class="imagen1" src="assets/img/login.png" >
+               
+                <div class="trans row"  >
+                    <p align="center" *ngIf="isLogged" > <font size="4" color="#a7d129">Bienvenido a Akana</font></p>
+      
+                  
 
-    </div>
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+                  <button type="submit"  *ngIf="isLogged" class="btn btn-success b1 col-sm-10 col-lg-8" (click)="onLogout()">CERRAR SESION</button>
+      
+            </div>
+                    <form #formLogin="ngForm" (submit)="onLogin()" *ngIf="!isLogged">
+      
+                <div class="form-group ">
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  ">
+      
+                <input [(ngModel)]="email" name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo" required>
+              </div>
+              </div>
+      
+              <div class="form-group ">
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <input [(ngModel)]="password"  name="password" type="password" class="form-control" id="inputPassword" placeholder="Contraseña" required>
+                </div>
+                <p align="center" *ngIf="isWrong"> <font size="4" color="#a7d129">Correo o Contraseña incorrecto</font></p>
+      
+              </div>
+              <div class="trans row">
+                  <button type="submit" class="btn btn-success b1 col-sm-10 col-lg-8">INICIAR SESION</button>
+                 
+            </div>
+            <div class="trans row">
+                <button type="button" class="btn btn-success b2 col-sm-10 col-lg-8 b2" routerLink="/registro">REGISTRARSE</button>
+              </div>
+            </form>
+           
+         
+          </div>
+      
+          </div>
+<!-- 
+    loggedd -->
+   
+  
+  
+  
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
         <img class="img-comida" src="assets/img/bolivianfood.jpg" >
 
     </div>
-  </div>
+      
+<!-- 
+  welcome -->
+   
+    
+
+
+ 
       
    
   <div class="row">
@@ -70,6 +91,7 @@
 
 
     </div>
+</div>
 </div>
 </BODY>
 

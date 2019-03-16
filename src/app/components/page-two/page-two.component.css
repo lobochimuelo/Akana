@@ -9,7 +9,7 @@
     
 .container-fluid{
     background-color: #302f2f;
-    min-height: 100vh;
+    min-height: 150vh;
     padding-top: 5%;
 
 }
@@ -48,3 +48,21 @@ input {
     font-size: 1.6rem;
 }
 
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgb(202, 251, 121);
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0%;
+}

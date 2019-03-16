@@ -5,41 +5,51 @@
       
       <div class="bus">
         <h3>REGISTRA TU LOCAL</h3>
-          <form>
+          <form (ngSubmit)="onSaveLocal(formNew)" #formNew="ngForm">
               <div class="form-group">
                 <label for="exampleFormControlInput1"><h6>Nombre Local</h6></label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" >
+                <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="local.nombre" #nombre="ngModel" name="nombre" >
               </div>
               <div class="form-group">
                   <label for="exampleFormControlInput1"> <h6>Direccion</h6></label>
-                  <input type="text" class="form-control" id="exampleFormControlInput1" >
+                  <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="local.direccion" #direccion="ngModel" name="direccion">
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlInput1"> <h6>Horario</h6></label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" >
+                    <label for="exampleFormControlInput1"> <h6>Tipo local</h6></label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="local.tipo" #tipo="ngModel" name="tipo">
 
 
                   </div>
-              <div class="form-group">
-                <label for="exampleFormControlSelect1"><h6>TIPO LOCAL</h6></label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                  <option>RESTAURANT</option>
-                  <option>PASTELERIA</option>
-                  <option>SNACK</option>
-                  <option>CAFE</option>
-                  <option>HELADERIA</option>
-                  <option>PANADERIA</option>
-                  <option>OTROS</option>
+                  <h3>TU MENU</h3>
+                      <div class="form-group">
+                        <label for="exampleFormControlInput1"><h6>Entrada</h6></label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="local.entrada" #entrada="ngModel" name="entrada" >
+                      </div>
+                      <div class="form-group">
+                          <label for="exampleFormControlInput1"> <h6>Sopa</h6></label>
+                          <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="local.sopa" #sopa="ngModel" name="sopa" >
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1"> <h6>Segundo</h6></label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1"  [(ngModel)]="local.segundo" #segundo="ngModel" name="segundo">
+                          </div>
+                          <div class="form-group">
+                              <label for="exampleFormControlInput1"> <h6>Postre</h6></label>
+                              <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="local.postre" #postre="ngModel" name="postre" >
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1"> <h6>Precio</h6></label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="local.precio" #precio="ngModel" name="precio">
+          
+                              </div>
+                              <div class="opciones">
+                                  <button type="submit" class="btn btn-success">REGISTRAR</button>
+                                </div>
+                      
+                            </form>
 
-                </select>
-              </div>
+
             
-            </form>
-            <div class="opciones">
-                <button type="button" class="btn btn-success">REGISTRAR</button>
-              </div>
-    </div>
     </div>
 
-    
     </div>
